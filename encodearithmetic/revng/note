@@ -1,0 +1,3 @@
+Decided not to use revng because it is primarily a binary translator and embeds a lot of junk code like statically linking qemu function into resulting binary which result to tons of garbage code in which there is no chance to find previously obfuscated function
+
+mctoll looked like good option, but currently it generates a lot of errors and resulting binary just refuses to launch. Resulting binary contains almost nothing and additonaly, this lifter depends on original .h functions. This is totally useless for us as  reverse engineers
